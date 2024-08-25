@@ -1,0 +1,75 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#greeting {
+  font-size: xx-large;
+  text-align: center;
+}
+
+#clock {
+  min-width: 500px;
+  font-size: 100px;
+  text-align: center;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+#todo-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#todo-form input {
+  width: 200px;
+}
+
+#todo-form input::placeholder {
+  text-align: center;
+}
+
+#todo-list {
+  max-height: 200px;
+  margin-left: 100px;
+  align-self: flex-start;
+}
+
+#todo-list button {
+  border-style: none;
+  margin-right: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#todo-list li {
+  font-weight: bold;
+}
+
+#weather {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  color: white;
+}

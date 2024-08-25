@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Vanilla Challenge</title>
+  <meta charset="UTF-8" />
+  <style>
+    .hidden {
+      display: none;
+    }
+
+    #result {
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Random Number Game</h1>
+
+  <div>
+    Generate a number between 0 and
+    <input id="maxValue" placeholder="1" type="number" value="1" min="1" />
+  </div>
+
+  <div>
+    Guess the number:
+    <input id="guess" placeholder="1" type="number" value="1" min="1">
+    <button id="play" type="button">Play!</button>
+  </div>
+
+  <div id="choose" class="hidden">
+    You chose: <span id="human"></span>, the machine chose: <span id="machine"></span>
+  </div>
+
+  <div id="result" class="hidden">
+  </div>
+  <script src="src/index.js"></script>
+</body>
+
+</html>
